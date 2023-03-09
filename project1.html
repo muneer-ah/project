@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muneer Ahmad</title>
+</head>
+<body>
+    <div class="display" id="maindiv">
+        <div class="display" id="item1" onclick="image1('item1')">
+            <img src="david-marcu-78A265wPiO4-unsplash.jpg" alt="" style='height: 100%; width: 100%; object-fit: contain'>
+        </div><br>
+        <div class="display" id="item2" onclick="image1('item2')">
+            <img src="henry-be-IicyiaPYGGI-unsplash.jpg" alt="" style='height: 100%; width: 100%; object-fit: contain'>
+        </div><br>
+        <div class="display" id="item3"onclick="image1('item3')">
+            <img src="tim-swaan-eOpewngf68w-unsplash.jpg" alt="" style='height: 100%; width: 100%; object-fit: contain'>
+        </div><br>
+        <div class="display" id="item4" onclick="image1('item4')">
+            <img src="v2osk-1Z2niiBPg5A-unsplash.jpg" alt="" style='height: 100%; width: 100%; object-fit: contain'>
+        </div><br>
+        <div class="display" id="item5"></div><br>
+    </div>
+    <style>
+        
+        #maindiv {
+            height: 600px;
+            width: auto;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            padding: 8px;
+            border: red;
+        }
+        .display {
+            border: 2px solid black;
+            height: 21%;
+            width: 25%;
+            object-fit: scale-down;
+        }
+        #item5 {
+            flex-grow: 4;
+            width: 75%;
+            
+        }
+        
+    </style>
+    <script>
+        let mydiv = document.getElementById("maindiv")
+        function image1(ids) {
+            let a = document.getElementById(ids).innerHTML;
+           mydiv.appendChild(item5).innerHTML = a;
+        }
+    </script>
+</body>
+</html>
